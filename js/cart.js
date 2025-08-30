@@ -5,7 +5,6 @@
       return;
     }
 
-    // Fetch product details
     const requests = cart.map(id => fetch(`https://fakestoreapi.com/products/${id}`).then(res => res.json()));
     const products = await Promise.all(requests);
 
