@@ -1,7 +1,7 @@
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 document.getElementById("menu-btn").onclick = () =>
   document.getElementById("mobile-menu").classList.toggle("hidden");
 
-const cart = JSON.parse(localStorage.getItem("cart")) || [];
 updateCart(cart.length);
 
 function updateCart(n) {
@@ -84,7 +84,6 @@ async function loadCategory() {
     }
     loadCategory();
   
-    
     function saveCart(cart) {
       localStorage.setItem("cart", JSON.stringify(cart));
       updateCartCount();
