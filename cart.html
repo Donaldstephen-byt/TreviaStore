@@ -6,7 +6,8 @@
     <title>ShopEasy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="/js/finetest.js" defer></script>
+    <!-- ✅ fixed script path -->
+    <script src="./js/finetest.js" defer></script>
   </head>
 
   <body>
@@ -52,7 +53,9 @@
 
       <div id="mobile-menu" class="hidden md:hidden border-t bg-white">
         <div class="flex flex-col p-4 gap-3 text-gray-700">
-          <a href="index.html" class="flex items-center gap-2"><i></i> Home</a>
+          <a href="./index.html" class="flex items-center gap-2"
+            ><i></i> Home</a
+          >
           <a href="./shop.html" class="flex"><i></i> Shop</a>
           <a href="./about.html" class="flex"><i></i> About</a>
           <a href="./contact.html" class="flex"><i></i> Contact</a>
