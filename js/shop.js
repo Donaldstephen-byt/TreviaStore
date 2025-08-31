@@ -28,20 +28,16 @@
             return `
         <div class="w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden group relative mt-[5rem]">
           <!-- Product image + title links to detail -->
-          <a href="product.html?id=${product.id}" class="block">
-            <div class="w-full h-48 overflow-hidden bg-gray-100 flex items-center justify-center">
-              <img src="${product.image}" alt="${product.title}"
-                class="h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-105"/>
-            </div>
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-800 line-clamp-2">${
-                product.title
-              }</h3>
-              <span class="text-xl font-bold text-black">$${
-                product.price
-              }</span>
-            </div>
-          </a>
+           <a href="product.html?id=${product.id}" class="block">
+          <div class="w-full h-48 overflow-hidden bg-gray-100 flex items-center justify-center">
+            <img src="${product.image}" alt="${product.title}"
+              class="h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-105"/>
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 line-clamp-2">${product.title}</h3>
+            <span class="text-xl font-bold text-black">$${product.price}</span>
+          </div>
+        </a>
           <!-- Add/Remove Cart -->
           <div class="p-4 pt-0">
             <button onclick="toggleCart(${product.id}, this)"
@@ -69,5 +65,6 @@
         }
         return array;
       }
+      
 
       window.onload = loadProducts;

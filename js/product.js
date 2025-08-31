@@ -4,7 +4,7 @@ async function loadProduct() {
     const id = params.get("id");
 
     const res = await fetch(`https://fakestoreapi.com/products/${id}`);
-    const product = await res.json();
+    let product = await res.json();
 
     lucide.createIcons();
     
@@ -39,7 +39,6 @@ function toggleCart(id, btn) {
     btn.innerHTML = `<i data-lucide="shopping-cart" class="mr-2"></i> Remove from Cart`;
   }
 
-  localStorage.setItem("cart", JSON.stringify(cart));
   updateCart(cart.length);
   lucide.createIcons();
 }
