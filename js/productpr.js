@@ -8,7 +8,7 @@ async function loadProduct() {
 
     lucide.createIcons();
     
-    document.getElementById("product-detail").innerHTML = `
+    document.getElementById("view-product").innerHTML = `
       <div class="grid grid-cols-2 gap-6">
         <img src="${product.image}" alt="${product.title}" class="w-full h-96 object-contain bg-gray-100 rounded-xl"/>
         <div>
