@@ -4,7 +4,7 @@
       document.getElementById("cart-container").innerHTML = "<p>Your cart is empty.</p>";
       return;
     }
-
+     lucide.createIcons();
     const requests = cart.map(id => fetch(`https://fakestoreapi.com/products/${id}`).then(res => res.json()));
     let products = await Promise.all(requests);
 
@@ -33,7 +33,6 @@
       </div>
     `;
   }
-
   function checkout() {
     alert("Checkout successful! (Demo)");
     localStorage.removeItem("cart");

@@ -48,6 +48,7 @@ const params = new URLSearchParams(window.location.search);
         `;
             })
             .join("");
+          lucide.createIcons();
         } catch (err) {
           console.error("Error fetching products:", err);
         }
