@@ -14,11 +14,13 @@
               category
             )}`
           );
+
+          lucide.createIcons();
           const categoryProducts = await res.json();
           products = [...products, ...categoryProducts];
         }
 
-        products = shuffleArray(products);
+   products = shuffleArray(products);
 
         const container = document.getElementById("product-container");
         container.innerHTML = products
@@ -30,7 +32,7 @@
           <!-- Product image + title links to detail -->
           <a href="product.html?id=${product.id}" class="block">
             <div class="w-full h-48 overflow-hidden bg-gray-100 flex items-center justify-center">
-              <img src="${product.image}" alt="${product.title}"
+              <img src="${product.image}" alt=""
                 class="h-full w-full object-cover transform transition-transform duration-500 group-hover:scale-105"/>
             </div>
             <div class="p-4">
