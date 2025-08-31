@@ -26,7 +26,6 @@ async function loadProduct() {
 
 
 function toggleCart(id, btn) {
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   if (cart.includes(id)) {
     cart = cart.filter(item => item !== id);

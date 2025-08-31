@@ -1,5 +1,4 @@
  async function loadCart() {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
     if (cart.length === 0) {
       document.getElementById("cart-container").innerHTML = "<p>Your cart is empty.</p>";
       return;
