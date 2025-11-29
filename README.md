@@ -23,6 +23,8 @@ How to Use
 
 Disclaimer
 
+
+
 This app is built for educational purposes only and is not intended for production use. The API used is free and may have limitations.
 
 Author
