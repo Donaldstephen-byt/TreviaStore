@@ -19,7 +19,7 @@ How to Use
 
 1. Clone the repository
 2. Open `index.html` in your favorite browser
-3. Start shopping!
+3. Start shopping!  
 
 Disclaimer
 
@@ -29,4 +29,4 @@ This app is built for educational purposes only and is not intended for producti
 
 Author
 
-[Donald Stephen]
+[Donald  Stephen]
